@@ -11741,6 +11741,12 @@ p {
   border-radius: 2px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  width: 105%;
+  border-radius: 10px;
+}
+.portfolio-item{
+  box-shadow: 5px 5px 10px #635e5e, -5px -5px 10px #f5f2f2;
+
 }
 
 .portfolio .portfolio-container .portfolio-item .content-holder {
@@ -11750,7 +11756,7 @@ p {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 115%;
   height: 100%;
   background: chocolate;
   display: -webkit-box;
@@ -11775,7 +11781,7 @@ p {
 }
 
 .portfolio .portfolio-container .portfolio-item .content-holder .title {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -11790,13 +11796,6 @@ p {
   opacity: 1;
   visibility: visible;
 }
-
-
-
-
-
-
-
 
 
 
@@ -12323,4 +12322,12 @@ pre .code {
 
 .hover-scale:hover {
   transform: scale(1.10);
+}
+.costumer_one{
+  font-size: 12px;
+  
+}
+.text-holder{
+  padding: 5px !important;
+  margin: 10px;
 }
