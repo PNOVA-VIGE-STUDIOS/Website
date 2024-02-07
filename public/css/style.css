@@ -573,7 +573,7 @@ pre code {
 
 .container {
   width: 100%;
-  padding-right: 30px;
+  padding-right: 10px;
   padding-left: 30px;
   margin-right: auto;
   margin-left: auto;
@@ -584,6 +584,19 @@ pre code {
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 130%;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .catalogo_services{
+    font-size: 25px;
+    width: 100%;
+    margin-left: 0 !important;
+    padding-left: 0;
   }
 }
 
@@ -623,6 +636,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  width: 100%;
 
 }
 
@@ -4497,12 +4511,14 @@ textarea.form-control.is-invalid {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #ffff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0;
-
-
+  
+}
+.test_in{
+  width: 92% !important;
 }
 
 .card>hr {
