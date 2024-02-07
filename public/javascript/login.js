@@ -324,7 +324,7 @@ function actualizarContenidoPopup(data) {
 <div class="row px-0">
 
     <div class="col-md-12 px-0">
-        <div class="section_container">
+        <div class="section_container_pop_up">
             <div class="section_login">
                 <h3><span class="login_tittle">Acompañamiento</span> y Asesoramiento Profesional</h3>
                 <p>En PNOVA STUDIIOS, nos enorgullece ofrecer no solo productos y servicios excepcionales, sino también un compromiso inquebrantable con la satisfacción de nuestros clientes. Creemos que la clave para el éxito va más allá de la entrega de soluciones tecnológicas; implica proporcionar un respaldo constante y un asesoramiento experto para garantizar la excelencia en cada paso.</p>
@@ -352,7 +352,7 @@ function actualizarContenidoPopup(data) {
     </div>
     <!-- Nueva sección: Preferencias de Cuenta -->
     <div class="col-md-6">
-        <div class="section_container">
+        <div class=" section_container_pop_up">
             <div class="section_login">
                 <h3> Actualizaciones y Mantenimiento Continuo </h3>
                 <p>El mundo tecnológico evoluciona rápidamente, y entendemos la importancia de mantener tus soluciones actualizadas. Ofrecemos servicios de actualización y mantenimiento continuo para garantizar que tus productos sigan siendo eficientes y seguros a lo largo del tiempo.</p>
@@ -361,7 +361,7 @@ function actualizarContenidoPopup(data) {
     </div>
     
     <div class="col-md-6">
-        <div class="section_container">
+        <div class="section_container_pop_up">
             <div class="section_login_ofert">
                 <h4>Oferta Especial: CreatividadPlus</h4>
                 <p>¡Disfruta de un 10% de descuento en tu actual y próximo proyecto creativo! Esta es una oportunidad única para elevar tus ideas con un ahorro especial.</p>
@@ -389,16 +389,16 @@ function actualizarContenidoPopup(data) {
     </div>
     <!-- Nueva sección: Enviar Mensajes -->
     <div class="col-md-12">
-        <div class="section_container">
+        <div class="section_container_pop_up">
             <div class="section_login whatsapp_duda">
                 <h4>¿Tienes Alguna Duda? Escribenos ahoramismo </h4>
-                <a href="https://wa.me/3042142011"><img src="/public/img/whataspp.png" alt="img_contact_whatsapp"></a>
+                <a href="https://wa.me/3042142011"><img src="/public/img/whataspp.webp" alt="img_contact_whatsapp"></a>
             </div>
         </div>
     </div>
 
     <div class="col-md-12">
-        <div class="section_container">
+        <div class="section_container_pop_up">
             <div class="section_login">
                 <h3 class="service_calif">Dejanos Tú Testimonio.</h3>
                 <label for="comment">Escribe aquí:</label>

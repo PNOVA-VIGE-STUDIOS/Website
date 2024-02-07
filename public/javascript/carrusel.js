@@ -51,7 +51,7 @@ function buildPriceCard(service) {
 
     var formattedPrice = new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP' }).format(service.price);
 
-    var statusIcon = service.meta.isActive ? '<img class="active_services" src="/public/img/active.png" alt="Activo">' : '<img src="x.png" alt="Inactivo">';
+    var statusIcon = service.meta.isActive ? '<img class="active_services" src="/public/img/active.webp" alt="Activo">' : '<img src="x.png" alt="Inactivo">';
 
     var characteristicsList = service.characteristics.map((characteristic) => '<li>' + characteristic + '</li>').join('');
 
