@@ -33,7 +33,7 @@
     <link rel="canonical" href="https://pnovastudios.xyz">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/public/img/icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/img/favicon.ico">
 
     <meta http-equiv="Content-Security-Policy"
         content="style-src 'self' 'unsafe-inline' https://abs.twimg.com https://abs-0.twimg.com">
@@ -61,7 +61,7 @@
 <body class="body_header" data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
 
-    <a id="loginButton" href="login.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600">
+    <a id="loginButton" href="/login" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600">
         <span class="inicia_se">Login<span class="fullcreen"><img src="/public/img/login .webp" class="img_login_button"
                     alt="img_login"></span></span>
         <i class="ti-shift-left-alt"></i><span class="sesion_span">INICIA SESIÓN <br></span>
@@ -502,6 +502,107 @@
             </div>
         </div>
     </section>
+    <!-- sectioon form  new section ---------------------------------->
+
+    <div id="registrate">
+
+        <section class="p_catalogo_1" id="registro_one">
+            <p class="p_catalogo">
+                Regístrate para recibir información exclusiva, promociones y actualizaciones de nuestros servicios.
+                Únete ahora.
+            </p>
+
+            <button class="Btn_catalogo" id="showFormBtn">&#8203;</button>
+
+
+            <div class="form_container" id="formContainer">
+
+                <form class="form" id="loginForm">
+
+
+                    <p id="heading_form">Regístrate</p>
+
+
+
+
+                    <div class="field">
+                        <label for="name"><i class="ti-face-smile"></i>&#8203;</label>
+                        <input autocomplete="off" placeholder="Nombres" class="input-field" type="text" id="name"
+                            pattern="[A-Za-z]+" title="Solo se permiten letras">
+                    </div>
+
+
+
+
+                    <div class="field">
+
+                        <label for="lastName"><i class="ti-target"></i>&#8203;</label>
+                        <input autocomplete="off" placeholder="Apellidos" class="input-field" type="text" id="lastName">
+                    </div>
+
+
+
+                    <div class="field">
+
+                        <label for="username"><i class="ti-user"></i>&#8203;</label>
+                        <input autocomplete="off" placeholder="Nombre De Usuario" class="input-field" type="text"
+                            id="username">
+                    </div>
+
+
+                    <div class="field">
+                        <label for="email"><i class="ti-check-box"></i>&#8203;</label>
+                        <input placeholder="Correo electrónico" class="input-field" type="Email" id="email">
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="password"><i class="ti-key"></i>&#8203;</label>
+                        <input placeholder="Contraseña" class="input-field" type="Password" id="password">
+                    </div>
+
+
+                    <div class="field_form">
+                        <input class="checkbox" type="checkbox" id="agree">
+                        <label for="agree">Acepto los términos y condiciones</label>
+
+                        <button class="button3" id="registroBtn">Enviar.</button>
+                        <div id="mensaje-exito-container"></div>
+                        <p class="paragraf_form">Regístrate con.</p>
+
+
+                        <div class="button_social">
+                            <a class="icons_container_one " href="https://api.pnovastudios.xyz/auth/google"><span
+                                    class="colply fa-brands fa-google"></span> Registrate con Google</a>
+
+                        </div>
+                        <a class="icons_container " href="https://api.pnovastudios.xyz/auth/microsoft"><span
+                                class="colply_microsoft fa-brands  fa-windows"></span> Registrate con Microsoft</a>
+
+
+                        <p class="pnova_form"> PNOVA \ VIGE <span class="form_form">STUDIIOS</span> </p>
+
+                        <div class="closeBtn"> <span class="ti-close"></span> cerrar</div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </form>
+
+
+            </div>
+
+        </section>
+    </div>
+
 
 
 
@@ -993,107 +1094,7 @@
     </section>
 
 
-    <!-- sectioon form  new section ---------------------------------->
-
-    <div id="registrate">
-
-        <section class="p_catalogo_1" id="registro_one">
-            <p class="p_catalogo">
-                Regístrate para recibir información exclusiva, promociones y actualizaciones de nuestros servicios.
-                Únete ahora.
-            </p>
-
-            <button class="Btn_catalogo" id="showFormBtn">&#8203;</button>
-
-
-            <div class="form_container" id="formContainer">
-
-                <form class="form" id="loginForm">
-
-
-                    <p id="heading_form">Regístrate</p>
-
-
-
-
-                    <div class="field">
-                        <label for="name"><i class="ti-face-smile"></i>&#8203;</label>
-                        <input autocomplete="off" placeholder="Nombres" class="input-field" type="text" id="name"
-                            pattern="[A-Za-z]+" title="Solo se permiten letras">
-                    </div>
-
-
-
-
-                    <div class="field">
-
-                        <label for="lastName"><i class="ti-target"></i>&#8203;</label>
-                        <input autocomplete="off" placeholder="Apellidos" class="input-field" type="text" id="lastName">
-                    </div>
-
-
-
-                    <div class="field">
-
-                        <label for="username"><i class="ti-user"></i>&#8203;</label>
-                        <input autocomplete="off" placeholder="Nombre De Usuario" class="input-field" type="text"
-                            id="username">
-                    </div>
-
-
-                    <div class="field">
-                        <label for="email"><i class="ti-check-box"></i>&#8203;</label>
-                        <input placeholder="Correo electrónico" class="input-field" type="Email" id="email">
-                    </div>
-
-
-                    <div class="field">
-
-                        <label for="password"><i class="ti-key"></i>&#8203;</label>
-                        <input placeholder="Contraseña" class="input-field" type="Password" id="password">
-                    </div>
-
-
-                    <div class="field_form">
-                        <input class="checkbox" type="checkbox" id="agree">
-                        <label for="agree">Acepto los términos y condiciones</label>
-
-                        <button class="button3" id="registroBtn">Enviar.</button>
-                        <div id="mensaje-exito-container"></div>
-                        <p class="paragraf_form">Regístrate con.</p>
-
-
-                        <div class="button_social">
-                            <a class="icons_container_one " href="https://api.pnovastudios.xyz/auth/google"><span
-                                    class="colply fa-brands fa-google"></span> Registrate con Google</a>
-
-                        </div>
-                        <a class="icons_container " href="https://api.pnovastudios.xyz/auth/microsoft"><span
-                                class="colply_microsoft fa-brands  fa-windows"></span> Registrate con Microsoft</a>
-
-
-                        <p class="pnova_form"> PNOVA \ VIGE <span class="form_form">STUDIIOS</span> </p>
-
-                        <div class="closeBtn"> <span class="ti-close"></span> cerrar</div>
-
-                    </div>
-
-
-
-
-
-
-
-
-
-                </form>
-
-
-            </div>
-
-        </section>
-    </div>
-
+    
 
 
 
@@ -1529,7 +1530,8 @@
             </div>
 
             <p class="p_footer_2">© 2023 PNOVA \ VIGE STUDIIOS , Todos Los Derechos Reservados.</p>
-            <p class="p_footer_2">Page Created By. Cristian Bonelo Developer.</p>
+            <p class="p_footer_2">Page Created By <span class="fa-solid fa-user-secret"></span>  CristianDevB.  </p>
+            
 
 
             

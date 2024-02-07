@@ -154,10 +154,21 @@ function manejarInicioDeSesionExitoso(token) {
 }
 
 function redirigirAPaginaPrincipal() {
-    window.location.href = "/public/html/index.html";
-
-
+    window.location.href = "/home?reload=true";
 }
+window.addEventListener('DOMContentLoaded', (event) => {
+    const params = new URLSearchParams(window.location.search);
+    
+    if (params.has('reload') && params.get('reload') === 'true') {
+        history.replaceState({}, document.title, window.location.pathname);
+        
+        setTimeout(function() {
+            window.location.reload(); 
+        }, 8000);
+    }
+});
+
+
 
 
 

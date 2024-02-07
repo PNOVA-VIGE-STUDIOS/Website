@@ -7127,6 +7127,19 @@ button.bg-dark:focus {
   -ms-flex-align: center !important;
   align-items: center !important;
 }
+@media (max-width: 768px) {
+  .align-items-center {
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    width: 130%;
+    margin-right: 10px;
+    margin-left: -50px;
+  }
+}
+
+
 
 .align-items-baseline {
   -webkit-box-align: baseline !important;
@@ -11419,7 +11432,18 @@ p {
 }
 
 .icon-lg {
-  font-size: 30px;
+  font-size: 22px;
+ 
+  
+}
+@media (max-width : 767px) {
+  .icon-lg {
+    font-size: 22px;
+    margin-left: -10px;
+   
+    
+  }
+  
 }
 
 .icon-xl {
@@ -12157,6 +12181,9 @@ pre .code {
   line-height: .7;
   margin-bottom: 25px;
   color: inherit;
+  width: 110%;
+  text-shadow: 10px 20px 10px rgba(0, 0, 0, 1.2);
+
 }
 
 .header .header-content .header-mono {
@@ -12313,8 +12340,6 @@ pre .code {
 }
 
 
-
-
 @media (max-width: 568px) {
   .card-body {
 
@@ -12340,10 +12365,60 @@ pre .code {
   transform: scale(1.10);
 }
 .costumer_one{
-  font-size: 12px;
+  font-size: 16px;
   
 }
 .text-holder{
   padding: 5px !important;
   margin: 10px;
+}
+@media (max-width: 768px){
+  .costumer_one{
+    font-size: 13px;
+    
+  }
+}
+
+.verification_activate{
+  color: black;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 70px;
+}
+.paragraf_activate{
+  text-align: center;
+}
+.form_activate{
+  text-align: center;
+  margin-bottom: 100px;
+}
+.title_activation{
+  font-size: 22px;
+}
+
+#send {
+  width: 200px; 
+  padding: 10px; 
+  margin-top: 20px; 
+  background-color: #7E3E11; 
+  color: white; 
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer; 
+  font-size: 16px; 
+}
+#send:hover {
+  background-color: chocolate; 
+}
+.input_activate{
+  width: 400px;
+  max-width: 70%;
+  height: 40px;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  text-align: center;
+  box-shadow: 5px 5px 10px #635e5e, -5px -5px 10px #f5f2f2;
+  margin-bottom: 20px;
 }

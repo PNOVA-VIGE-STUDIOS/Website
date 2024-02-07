@@ -68,8 +68,6 @@
 }
 
 
-
-
 .btn_one {
   background-color: transparent;
   border: 2px solid transparent;
@@ -78,6 +76,8 @@
 
 .text-light_one {
   font-size: 30px;
+  text-shadow: 3px 6px 4px rgba(185, 176, 176, 0.5);
+
 }
 
 
@@ -244,7 +244,10 @@
 
 
 
-
+.fa-user-secret{
+  font-size: 18px;
+  padding: 10px;
+}
 
 
 
@@ -257,9 +260,12 @@
   animation: cambiar 20s ease-in-out infinite;
   text-align: center;
   padding-left: 30px;
+  padding-bottom: 100px;
 
 
 }
+
+
 
 
 .container_title {
@@ -319,6 +325,10 @@
     align-items: center;
     margin-left: 21px;
   }
+  .span_footer_title_1 {
+   font-size: 17px;
+   color: white;
+  }
 
 }
 
@@ -362,7 +372,8 @@
   height: 40px;
   justify-content: center;
   align-items: center;
-
+  text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.9);
+  margin-top: 40px;
 
 }
 
@@ -699,7 +710,8 @@ select:hover {
   cursor: pointer;
   transition: color 3s ease, box-shadow 1s ease;
   margin: 0px 15% 0px 15%;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
+  margin-top: 100px;
 }
 
 .p_catalogo_1:hover {
@@ -1151,8 +1163,6 @@ label {
   white-space: normal;
   margin-bottom: 10px;
   border-top: 1px solid chocolate;
-
-
 }
 
 .testimonial-container {
@@ -1160,17 +1170,33 @@ label {
   justify-content: flex-start;
   gap: 20px;
   padding: 20px;
-  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
   overflow-x: auto;
 
+
+
 }
 
+@media (max-width: 768px) {
+  
+.testimonial-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+  padding-left: 0;
+  margin-left: -25px;
 
+}
+}
 
 .testimonial {
   flex: 0 0 auto;
-  max-width: 320px;
+  max-width: 370px;
   width: 100%;
   background-color: #ffffff;
   border-radius: 10px;
@@ -1178,6 +1204,15 @@ label {
   overflow: hidden;
   margin: 30px;
   transition: transform 1s ease-in-out;
+ 
+  
+}
+
+@media (min-width: 400px)and (max-width: 500px) {
+  .testimonial {
+    width: 372px;
+  }
+
 }
 
 .testimonial:hover {
@@ -1191,6 +1226,8 @@ label {
 .testimonial-content p {
   margin: 0;
 }
+
+
 
 .author {
   margin-top: 10px;
@@ -1206,7 +1243,6 @@ label {
   height: 120px;
   overflow: hidden;
   border-radius: 50%;
-
 }
 
 .testimonial-avatar img {
@@ -1672,15 +1708,16 @@ label {
 
 .inicia_se {
   color: rgb(65, 49, 6);
-  padding: 10px;
-  box-shadow: 5px 5px 10px #eeecec, -5px -5px 10px #f3f2f2;
+  padding: 6px 0 6px 6px;
+  box-shadow: 5px 5px 10px #352701, -5px -5px 10px #2e2b2b;
   border-radius: 7px;
   background-color: white;
+  font-size: 15px;
 
 }
 
 .img_login_button {
-  width: 32px;
+  width: 27px;
 }
 
 .sesion_span {
@@ -1799,6 +1836,7 @@ label {
 .section_container {
   height: 100%;
   max-height: 600px;
+  width: 120%;
 
 }
 
@@ -2251,3 +2289,31 @@ label {
   border-bottom: 1px solid rgb(241, 239, 237);
   padding-bottom: 10px;
 }
+
+.inf_activate{
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 100px;
+  max-width: 100%;
+
+}
+.title_activation_ac{
+  text-align: center;
+  margin-top: 30px;
+  max-width: 100%;
+  padding: 10px;
+  font-size: 30px;
+}
+.regedittoken{
+  border-bottom: 2px solid rgb(211, 105, 29);
+  font-size: 18px;  
+  padding: 4px;
+
+}
+.error{
+  padding: 5px;
+  font-size: 17px;
+}
+
+
+

@@ -3,7 +3,7 @@ let rating = 0;
 function generarEstrellas(rate) {
     let estrellasHTML = '';
     for (let i = 1; i <= 5; i++) {
-        estrellasHTML += `<span class="star"${i <= rate ? ' style="color: chocolate; height : 100% ;font-size: 1.5em;box-shadow: 5px 5px 10px #eceaea, -5px -5px 10px #f3f2f2;padding: 4px; display: flex;justify-content: center;align-items: center; border-radius: 12px"' : ''}>&#9733;</span>`;
+        estrellasHTML += `<span class="star"${i <= rate ? ' style="color: chocolate; height : 100% ;font-size: 1.5em;box-shadow: 5px 5px 10px #eceaea, -5px -5px 10px #f3f2f2;padding: 4px; display: flex;justify-content: center;align-items: center;margin-top:20px; border-radius: 12px"' : ''}>&#9733;</span>`;
     }
     return estrellasHTML;
 }
