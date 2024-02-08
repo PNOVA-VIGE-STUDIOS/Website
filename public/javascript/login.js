@@ -107,11 +107,16 @@ function actualizarEstadoBotonUsuario() {
     }
 }
 
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        minimizarPopup();
+    }
+});
+
 function minimizarPopup() {
     console.log("Minimizando el popup...");
     ocultarPopup();
 }
-
 function mostrarPopup() {
     var popupContent = document.querySelector(".popup-content");
     if (popupContent) {
@@ -158,12 +163,12 @@ function redirigirAPaginaPrincipal() {
 }
 window.addEventListener('DOMContentLoaded', (event) => {
     const params = new URLSearchParams(window.location.search);
-    
+
     if (params.has('reload') && params.get('reload') === 'true') {
         history.replaceState({}, document.title, window.location.pathname);
-        
-        setTimeout(function() {
-            window.location.reload(); 
+
+        setTimeout(function () {
+            window.location.reload();
         }, 8000);
     }
 });
@@ -273,6 +278,8 @@ function actualizarContenidoPopup(data) {
     localStorage.setItem('profilePicture', data.profilePicture);
     popupContent.innerHTML = `
     <p class="home_login">Bienvenido A Tú Cuenta PNOVA <br>  <span class="name_user">${nombre}</span> </p>
+    <button id="cerrarSesionBtn" onclick="cerrarSesion()">Cerrar Sesión</button>
+    <button id="minimizarPopupBtn" onclick="minimizarPopup()">Minimizar</button>
    
     <div class="container_img_login">
     <img id="avatarImage" class="img_services" src="${localStorage.getItem('profilePicture')}" alt="Imagen del Usuario"><br>
@@ -283,13 +290,17 @@ function actualizarContenidoPopup(data) {
 <nav class="navbar courser sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix"
     data-offset-top="510">
     <div class="container">
+    
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
+            
             &nbsp;
         </button>
         <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+       
             <ul class="navbar-nav mr-auto">
                 <li class="home nav-item">
                     <a href="/public/html/index.html" class="ti-home">&#8203;</a>
@@ -435,8 +446,7 @@ PNOVA, nos comprometemos a ofrecerle soluciones de la más alta calidad, impulsa
 excelencia.
 <br><br>Atentamente, El equipo de PNOVA STUDIIOS
 <br>
-<button id="cerrarSesionBtn" onclick="cerrarSesion()">Cerrar Sesión</button>
-<button id="minimizarPopupBtn" onclick="minimizarPopup()">Minimizar</button>
+
 </div>
     
 `;
@@ -504,4 +514,4 @@ function obtenerNombreUsuario() {
 
 
 
-  
+

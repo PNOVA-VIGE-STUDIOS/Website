@@ -174,6 +174,34 @@ $(document).ready(function () {
             $("body").css("overflow", "hidden");
         }
     });
+    // Event listener para btn-red-one
+
+    showFormBtn.on("click", function (event) {
+        toggleFormVisibility();
+    });
+    
+    $("#btn-red-one").on("click", function (event) {
+        toggleFormVisibility();
+    });
+    
+    function toggleFormVisibility() {
+        event.preventDefault();
+        if (formContainer.css("visibility") === "visible") {
+            closeForm();
+        } else {
+            openForm();
+        }
+    }
+    
+    function openForm() {
+        formContainer.css("visibility", "visible");
+        $("body").css("overflow", "hidden");
+    }
+    
+    function closeForm() {
+        formContainer.css("visibility", "hidden");
+        $("body").css("overflow", "auto");
+    }
 
     closeFormBtn.on("click", closeForm);
 

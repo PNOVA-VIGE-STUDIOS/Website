@@ -55,7 +55,7 @@ function buildPriceCard(service) {
 
     var characteristicsList = service.characteristics.map((characteristic) => '<li>' + characteristic + '</li>').join('');
 
-    var priceCard = $('<div class="col-md-4 col-lg-4">' +
+    var priceCard = $('<div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">' +
 
         '<div class="price-card text-center mb-5 ">' +
         '<h3 class="price-card-title">' + statusIcon + service.name + '</h3>' +
@@ -130,38 +130,36 @@ $(document).ready(function () {
 
 
 
-//section pop up whatsapp
 document.addEventListener("DOMContentLoaded", function () {
-
     setTimeout(function () {
         document.getElementById("whatsapp-button").style.display = "block";
     }, 4000);
-
 
     setTimeout(function () {
         document.getElementById("whatsapp-popup").style.display = "block";
     }, 8000);
 
-
     document.getElementById("whatsapp-button").addEventListener("click", function () {
         var popup = document.getElementById("whatsapp-popup");
-
         if (popup.style.display === "block") {
-
             popup.style.display = "none";
         } else {
-
             popup.style.display = "block";
         }
     });
 
-
-    document.addEventListener("keydown", function (event) {
+    window.addEventListener("keydown", function(event) {
         if (event.key === "Escape") {
-            closePopup();
+            minimizarPopup();
         }
     });
 });
+
+function minimizarPopup() {
+    var popup = document.getElementById("whatsapp-popup");
+    popup.style.display = "none";
+}
+
 
 
 

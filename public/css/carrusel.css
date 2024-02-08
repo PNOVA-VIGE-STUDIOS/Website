@@ -857,12 +857,6 @@ select:hover {
 }
 
 
-
-
-
-
-
-
 /* CSS para el nuevo formulario */
 
 
@@ -877,10 +871,11 @@ select:hover {
   justify-content: center;
   align-items: center;
   background-color: rgba(219, 214, 214, 0.7);
-  z-index: 999;
+  z-index: 9999;
   transition: all 0.5s ease;
   backdrop-filter: blur(5px);
   overflow: auto;
+
 }
 
 .form {
@@ -1065,6 +1060,7 @@ select:hover {
   color: black;
   font-size: 16px;
   text-decoration: none;
+  margin-top: 30px;
 }
 .option_m{
   color: rgb(68, 38, 17);
@@ -1115,7 +1111,7 @@ select:hover {
 }
 
 .img_entrega {
-  height: 84px;
+  height: 64px;
 }
 
 
@@ -1882,6 +1878,30 @@ label {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+  .home {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: center;
+    font-size: 28px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px #eeecec, -5px -5px 10px #f3f2f2;
+    border-radius: 12px;
+  }
+  .home2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    padding: 5px;
+    box-shadow: 5px 5px 10px #eeecec, -5px -5px 10px #f3f2f2;
+    border-radius: 12px;
+    margin-top: 10px;
+  }
+}
+
+
 
 .facebook {
   color: black;
@@ -2312,5 +2332,35 @@ label {
   font-size: 17px;
 }
 
+.btn-red-one {
+  margin-top: 30px;
+  display: block;
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: pulse 2s infinite alternate;
+  margin: auto;
+}
 
+.btn-red-one:hover {
+  background-color: #c0392b;
+}
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+#cerrarSesionBtn, #minimizarPopupBtn{
+  padding:4px 6px 4px 6px!important; 
+  margin-left: 0 !important;
+  margin-right: 5px !important;
+}

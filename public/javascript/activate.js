@@ -63,6 +63,7 @@ window.addEventListener('load', async (event) => {
         Lamentamos todos los inconvenientes. </br> <a class="regedittoken" href="/sendEmailValidate">${"Solicita un nuevo email aqui."}</a>`
         return;
     }
+    
     text.className = 'ok'
     text.innerHTML = "Tu cuenta ha sido activada con exito, en unos segundos seras redirigido a la pagina principal..."
     setTimeout(() => {
