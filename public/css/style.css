@@ -4,11 +4,6 @@
 
 
 
-
-
-
-
-
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -11593,17 +11588,17 @@ p {
 
 
 .price-card {
+  border-radius: 6px;
   padding: 20px 30px 0 30px;
   border: 1px solid #dee2e6;
-  border-top-right-radius: 50px;
+  border-top-right-radius: 33px;
+  border-bottom-left-radius: 33px;
   padding-bottom: 250px;
-  border-right: 4px solid chocolate;
+  border-right: 2px solid chocolate;
   box-shadow: 5px 5px 10px #635e5e, -5px -5px 10px #f5f2f2;
   overflow: auto;
-  max-height: 100%;
+  max-height: 1500px;
   margin: 5px;
-
-
 
 }
 

@@ -875,7 +875,6 @@ select:hover {
   transition: all 0.5s ease;
   backdrop-filter: blur(5px);
   overflow: auto;
-
 }
 
 .form {
@@ -884,8 +883,18 @@ select:hover {
   width: auto;
   margin-top: 190px;
   padding-top: 30px;
+  display: block;
 }
-
+.send-email{
+  margin-bottom: 300px;
+  width: 350px;
+  margin: auto;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.send-email p{
+  font-size: 16px;
+}
 @media (max-width: 768px) {
 
   .form {
@@ -1791,13 +1800,9 @@ label {
 }
 
 .section_login {
-  width: 100%;
-  padding: 20px;
+ width: 100% !important;
   border: none !important;
-  margin: 0;
-  height: 100%;
-  margin-top: 100px;
-  padding-top: 100px;
+  
 
 
 }
@@ -1815,9 +1820,8 @@ label {
 }
 
 .whatsapp_duda {
-  text-align: center;
-  height: 20px;
-  margin-bottom: 50px;
+ font-size: 14px;
+ text-align: center;
   
 }
 
@@ -1923,7 +1927,10 @@ label {
 
 
 }
-
+.cks{
+  margin-bottom: -100px !important;
+  padding-bottom: 0;
+}
 #send-btn {
   background-color: transparent;
   color: #7A3E10;
@@ -2281,9 +2288,10 @@ label {
 }
 
 .img_price {
-  width: 44px !important;
-}
+  width: 120px !important;
+  margin-bottom: 10px;
 
+}
 
 .active_services {
   margin-bottom: 40px;
@@ -2363,4 +2371,35 @@ label {
   padding:4px 6px 4px 6px!important; 
   margin-left: 0 !important;
   margin-right: 5px !important;
+}
+
+
+@media (max-width: 600px){
+  .section_container_pop_up{
+    width: 120%;
+    margin: 0;
+    padding: 0;
+  }
+}
+.p_one_class{
+  text-align: center;
+  color: rgb(68, 34, 9);
+  margin-top: 100px;
+}
+
+.aquí{
+  margin-left: 10px;
+  color: rgb(99, 45, 7);
+  font-size: 16px;
+}
+
+.icon_8{
+  color: white;
+  padding: 10px;
+
+
+}
+.icon_8_8{
+  color: white;
+  font-size: 16px;
 }

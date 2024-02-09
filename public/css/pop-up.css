@@ -129,9 +129,10 @@
 }
 
 .img_services {
-    width: 150px;
+    width: 120px;
     box-shadow: 5px 5px 10px #fcf8f7, 5px 5px 10px #cfbcbc;
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 .name_user {

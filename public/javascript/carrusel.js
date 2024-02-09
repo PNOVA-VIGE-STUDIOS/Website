@@ -44,6 +44,7 @@ function obtenerConteoLocal(articleId) {
 
 
 
+
 function buildPriceCard(service) {
     console.log('buildPriceCard called with service:', service);
 
@@ -57,7 +58,7 @@ function buildPriceCard(service) {
 
     var priceCard = $('<div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">' +
 
-        '<div class="price-card text-center mb-5 ">' +
+        '<div class="price-card text-center mb-5 pb-5 ">' +
         '<h3 class="price-card-title">' + statusIcon + service.name + '</h3>' +
         '<img class="img_price" src="' + service.faviconUrl + '" alt="' + service.name + '">' +
         '<div class="price-card-cost">' +
@@ -79,7 +80,6 @@ function buildPriceCard(service) {
     console.log('Price card built for service:', service.name);
     return priceCard;
 }
-
 
 
 

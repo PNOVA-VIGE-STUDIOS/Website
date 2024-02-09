@@ -37,7 +37,6 @@ window.addEventListener("load", () => {
 
 
 
-
 window.addEventListener('load', async (event) => {
     const text = document.querySelector('#text')
 

@@ -235,8 +235,7 @@ function verificarEstadoSesion() {
     var token = localStorage.getItem('token');
 
     if (token) {
-        console.log("Token almacenado:", token);
-
+        
         var cleanedToken = token.trim();
         obtenerInformacionUsuario(cleanedToken);
     } else {
@@ -362,7 +361,7 @@ function actualizarContenidoPopup(data) {
         </div>
     </div>
     <!-- Nueva sección: Preferencias de Cuenta -->
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-12">
         <div class=" section_container_pop_up">
             <div class="section_login">
                 <h3> Actualizaciones y Mantenimiento Continuo </h3>
@@ -401,9 +400,9 @@ function actualizarContenidoPopup(data) {
     <!-- Nueva sección: Enviar Mensajes -->
     <div class="col-md-12">
         <div class="section_container_pop_up">
-            <div class="section_login whatsapp_duda">
-                <h4>¿Tienes Alguna Duda? Escribenos ahoramismo </h4>
-                <a href="https://wa.me/3042142011"><img src="/public/img/whataspp.webp" alt="img_contact_whatsapp"></a>
+            <div class="section_login ">
+                <h4 class="whatsapp_duda">¿Tienes Alguna Duda? Escribenos ahoramismo  <a href="https://wa.me/3042142011"><img src="/public/img/whataspp.webp" alt="img_contact_whatsapp"></a></h4>
+                
             </div>
         </div>
     </div>
@@ -447,6 +446,10 @@ excelencia.
 <br><br>Atentamente, El equipo de PNOVA STUDIIOS
 <br>
 
+</div>
+<div class="p_one_class"
+<p >© 2023 PNOVA \ VIGE STUDIIOS , Todos Los Derechos Reservados.</p>
+<p >Page created by <span class="fa-solid fa-user-secret"></span>  CristianDevB.  </p>
 </div>
     
 `;
