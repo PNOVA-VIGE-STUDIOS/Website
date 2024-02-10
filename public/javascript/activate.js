@@ -59,7 +59,7 @@ window.addEventListener('load', async (event) => {
     if(!rta.ok){
         text.className = 'error'
         text.innerHTML = `Hemos tenido dificultades en activar tu cuenta. si han pasado mas de 15 minutos vuelve a solicitar un nuevo correo de activacion. </br>
-        Lamentamos todos los inconvenientes. </br> <a class="regedittoken" href="/sendEmailValidate">${"Solicita un nuevo email aqui."}</a>`
+        Lamentamos todos los inconvenientes. </br> <a class="regedittoken" href="/send-email-activate">${"Solicita un nuevo email aqui."}</a>`
         return;
     }
     

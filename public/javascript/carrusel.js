@@ -43,8 +43,6 @@ function obtenerConteoLocal(articleId) {
 
 
 
-
-
 function buildPriceCard(service) {
     console.log('buildPriceCard called with service:', service);
 

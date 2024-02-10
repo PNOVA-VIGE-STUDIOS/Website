@@ -2344,7 +2344,7 @@ label {
   margin-top: 30px;
   display: block;
   padding: 10px 20px;
-  background-color: #e74c3c;
+  background-color: #9F2614;
   color: white;
   font-size: 14px;
   border: none;
@@ -2402,4 +2402,8 @@ label {
 .icon_8_8{
   color: white;
   font-size: 16px;
+}
+.icon8_one{
+  height: 25px;
+  margin: 0 2px 0 5px;
 }
