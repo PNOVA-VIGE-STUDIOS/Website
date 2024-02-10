@@ -638,8 +638,8 @@ select:hover {
 }
 
 @keyframes changeColor {
-  0% {
-    color: #393e46;
+  10% {
+    color: #dfe3e9;
   }
 
   50% {
@@ -647,7 +647,10 @@ select:hover {
   }
 
   100% {
-    color: #393e46;
+    color: #8bd4b6;
+  }
+  120% {
+    color: #bdeeb3;
   }
 }
 
@@ -686,7 +689,6 @@ select:hover {
   border-radius: 50%;
   opacity: 1;
   box-shadow: 5px 5px 10px #635e5e, -5px -5px 10px #f5f2f2;
-  margin-bottom: 20px;
   margin-left: 20px;
 
 }
@@ -1727,9 +1729,8 @@ label {
 
 .sesion_span {
   border-bottom: 2px solid chocolate;
-  box-shadow: 5px 5px 10px #eeecec, -5px -5px 10px #f3f2f2;
   padding: 9px;
-  background-color: white;
+  margin-left: 10px;
 }
 
 .text_info {
@@ -1963,6 +1964,10 @@ label {
   box-shadow: 5px 5px 10px #eeecec, -5px -5px 10px #f3f2f2;
 
 }
+.text_footer{
+  margin-top: 20px;
+  font-size: 15px;
+}
 
 #submitbtn_login {
   color: rgb(61, 30, 8);
@@ -2159,12 +2164,13 @@ label {
 
 .whatsapp-popup {
   max-width: 350px;
-  background-color: #fdfafa;
+  background-color: #FFFFFF;
   border-radius: 8px;
   box-shadow: 5px 5px 10px #352701, -5px -5px 10px #2e2b2b;
   margin: auto;
   padding: 10px;
   display: none;
+  color: #303030;
 
 
 }
@@ -2212,6 +2218,7 @@ label {
   border-radius: 12px;
   padding: 4px 4px 0 6px;
   width: 52px;
+  background-color: white;
 
 }
 
@@ -2265,7 +2272,7 @@ label {
   margin: 0;
   cursor: pointer;
   font-size: 18px;
-  color: gray;
+  color: #3B3B3B;
   padding: 7px;
 
 }
@@ -2406,4 +2413,22 @@ label {
 .icon8_one{
   height: 25px;
   margin: 0 2px 0 5px;
+}
+
+.tender{
+  width: 100%;
+}
+
+@media (max-width: 575px){
+  .tender{
+    width: 125%;
+    padding-left: -10 !important;
+  }
+  .tender_noved{
+    width: 100%;
+    padding-left: 25px;
+  }
+  .tender_row{
+    width: 115%;
+  }
 }

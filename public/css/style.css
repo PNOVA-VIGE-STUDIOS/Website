@@ -11208,7 +11208,7 @@ a.text-warning:focus {
 
 .text-danger {
   color: #884706 !important;
-  border-bottom: 1px solid rgb(224, 182, 152);
+
 }
 
 .text-danger_social_card {
@@ -11220,6 +11220,8 @@ a.text-danger:hover,
 a.text-danger:focus {
   color: chocolate !important;
 }
+
+
 
 .text-light {
   color: black !important;
