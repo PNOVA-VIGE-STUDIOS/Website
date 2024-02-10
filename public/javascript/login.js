@@ -401,7 +401,7 @@ function actualizarContenidoPopup(data) {
     <div class="col-md-12">
         <div class="section_container_pop_up">
             <div class="section_login ">
-                <h4 class="whatsapp_duda">¿Tienes Alguna Duda? Escribenos ahoramismo  <a href="https://wa.me/3042142011"><img src="/public/img/whataspp.webp" alt="img_contact_whatsapp"></a></h4>
+                <h4 class="whatsapp_duda">¿Tienes Alguna Duda? Escribenos <a href="https://wa.me/3042142011"><img src="/public/img/whataspp.webp" alt="img_contact_whatsapp"></a></h4>
                 
             </div>
         </div>
