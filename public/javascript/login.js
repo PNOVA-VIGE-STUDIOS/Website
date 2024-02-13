@@ -113,8 +113,7 @@ document.addEventListener("keydown", function(event) {
     }
 });
 
-function minimizarPopup() {
-    console.log("Minimizando el popup...");
+function minimizarPopup(popup) {
     ocultarPopup();
 }
 function mostrarPopup() {
@@ -513,6 +512,9 @@ document.addEventListener("DOMContentLoaded", function () {
 function obtenerNombreUsuario() {
     return nombreUsuarioActual || "NombreDeUsuarioPorDefecto";
 }
+
+
+
 
 
 

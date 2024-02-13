@@ -2163,8 +2163,6 @@ label {
   padding: 10px;
   display: none;
   color: #303030;
-
-
 }
 
 
@@ -2379,6 +2377,7 @@ label {
     margin: 0;
     padding: 0;
   }
+  
 }
 .p_one_class{
   text-align: center;
@@ -2403,7 +2402,7 @@ label {
   font-size: 16px;
 }
 .icon8_one{
-  height: 25px;
+  height: 22px;
   margin: 0 2px 0 5px;
 }
 

@@ -127,7 +127,6 @@ $(document).ready(function () {
 
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         document.getElementById("whatsapp-button").style.display = "block";
@@ -138,25 +137,34 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 8000);
 
     document.getElementById("whatsapp-button").addEventListener("click", function () {
-        var popup = document.getElementById("whatsapp-popup");
-        if (popup.style.display === "block") {
-            popup.style.display = "none";
-        } else {
-            popup.style.display = "block";
-        }
+        togglePopup();
     });
 
     window.addEventListener("keydown", function(event) {
         if (event.key === "Escape") {
-            minimizarPopup();
+            minimizarPopup("whatsapp-popup");
+            minimizarPopup("popup");
         }
     });
+
+   
 });
+
+function togglePopup() {
+    var popup = document.getElementById("whatsapp-popup");
+    if (popup.style.display === "block") {
+        popup.style.display = "none";
+    } else {
+        popup.style.display = "block";
+    }
+}
 
 function minimizarPopup() {
     var popup = document.getElementById("whatsapp-popup");
     popup.style.display = "none";
 }
+
+
 
 
 
